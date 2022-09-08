@@ -17,7 +17,9 @@ html{
 }
 
 a{
-    color:white;
+    color: white;
+    background-color: grey;
+ 
 }
 
 /* UTILITIES */
@@ -36,13 +38,8 @@ main{
     position: absolute;
     right: 5px;
     height: 10px;
+    border-radius: 50px;
    
-}
-
-.speaker>a{
-    color: white;
-    background-color: grey;
-
 }
 
 .videos{
@@ -77,21 +74,31 @@ position: relative;
 background-color: grey;
 height: 80px;
 width: 100%;
-bottom: 0;
+top: -14px;
+left: 0;
 margin: 0 auto;
 
 }
 
 .left-nav{
+    display: flex;
     position: relative;
     left: 20px;
     line-height: center;
+    bottom: -10px;
 }
 
+.microphone{
+    margin: 0 20px;
+    line-height: center;
+   
+}
+
+
 .central-nav{
-    position: absolute;
+    /* position: absolute;
     line-height: center;
     left:50%;
     transform: translate(-50%, 50%);
-    height: 80%;
+    height: 80%; */
 }
