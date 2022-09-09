@@ -52,7 +52,7 @@ main{
     flex-wrap: wrap;
     row-gap: 2px;
     column-gap: 2px;
-    /* height:calc(100% / 6); */
+    width:calc(90% / 35);
 }
 .video{
     position:relative;
@@ -72,17 +72,18 @@ main{
 .footer{
 position: relative;
 background-color: grey;
-height: 80px;
+height: 10vh;
 width: 100%;
-top: -14px;
-left: 0;
-margin: 0 auto;
+
+
 
 }
 
 .left-nav{
     display: flex;
-    position: relative;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
     left: 20px;
     line-height: center;
     bottom: -10px;
@@ -96,9 +97,16 @@ margin: 0 auto;
 
 
 .central-nav{
-    /* position: absolute;
+    display: flex;
+    position: absolute;
     line-height: center;
+    top:50%;
     left:50%;
-    transform: translate(-50%, 50%);
-    height: 80%; */
+    transform: translate(-50%, -50%);
+    bottom: -10px;
+    justify-content: space-between;
+}
+.central-nav>a{
+    margin: 0 20px 0 20px;
+    
 }
